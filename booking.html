@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea FC - Stadium Tours</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="Chelsea_fc.jpeg" alt="Chelsea FC Logo" class="logo">
+            <h1>Chelsea Football Club</h1>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery & Stats</a></li>
+                <li><a href="booking.html">Stadium Tours</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="booking-form">
+            <h2>Stamford Bridge Tour Booking</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+44 1234567890">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tour Details</legend>
+                    <div class="form-group">
+                        <label for="tour-type">Tour Type:</label>
+                        <select id="tour-type" name="tour-type" required>
+                            <option value="">Select a tour</option>
+                            <option value="standard">Standard Tour (£25)</option>
+                            <option value="vip">VIP Experience (£75)</option>
+                            <option value="family">Family Package (£60 for 4)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Tour Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="visitors">Number of Visitors:</label>
+                        <input type="number" id="visitors" name="visitors" min="1" max="10" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Special Requirements:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="wheelchair" name="requirements" value="wheelchair">
+                            <label for="wheelchair">Wheelchair Access</label>
+                            
+                            <input type="radio" id="hearing" name="requirements" value="hearing">
+                            <label for="hearing">Hearing Assistance</label>
+                            
+                            <input type="radio" id="none" name="requirements" value="none" checked>
+                            <label for="none">None</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Any special requests..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Chelsea FC. All rights reserved.</p>
+            <p>Project by Ahmed - Jamburiya University</p>
+        </div>
+    </footer>
+</body>
+</html>
